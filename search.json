@@ -11,7 +11,7 @@
     "href": "resources.html#code-chunks",
     "title": "Resources",
     "section": "Code chunks",
-    "text": "Code chunks\nCool Python/R package for awesome visualizations.\n\nPython: Leaflet + Folium\nExample modify from Python Visualization website\n\n\nCode\nimport folium\n\nm = folium.Map(location=[-19.2491, 146.799], tiles=\"Stamen Terrain\", zoom_start=14)\nfolium.Marker([-19.2491, 146.799], popup=\"Castle Hill\").add_to(m)\nm.add_child(folium.ClickForMarker(popup=\"Waypoint\"))\n\nm\n\n\nMake this Notebook Trusted to load map: File -> Trust Notebook"
+    "text": "Code chunks\nCool Python/R package for awesome visualizations.\n\nPython: Leaflet + Folium\nExample modified from Python Visualization website\n\n\nCode\nimport folium\n\nm = folium.Map(location=[-19.2491, 146.799], tiles=\"Stamen Terrain\", zoom_start=14)\nfolium.Marker([-19.2491, 146.799], popup=\"Castle Hill\").add_to(m)\nm.add_child(folium.ClickForMarker(popup=\"Waypoint\"))\n\nm\n\n\nMake this Notebook Trusted to load map: File -> Trust Notebook"
   },
   {
     "objectID": "about.html",

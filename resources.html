@@ -218,7 +218,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Cool Python/R package for awesome visualizations.</p>
 <section id="python-leaflet-folium" class="level3">
 <h3 class="anchored" data-anchor-id="python-leaflet-folium">Python: Leaflet + Folium</h3>
-<p>Example modify from <a href="https://python-visualization.github.io/folium/quickstart.html#Choropleth-maps">Python Visualization website</a></p>
+<p>Example modified from <a href="https://python-visualization.github.io/folium/quickstart.html#Choropleth-maps">Python Visualization website</a></p>
 <div class="cell" data-execution_count="1">
 <details>
 <summary>Code</summary>
@@ -258,7 +258,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; />
             <style>
-                #map_0946dd704d952068d0899eca0330356b {
+                #map_73e7bcbf73a64825df994f21cdd28897 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -272,14 +272,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <body>
     
     
-            <div class=&quot;folium-map&quot; id=&quot;map_0946dd704d952068d0899eca0330356b&quot; ></div>
+            <div class=&quot;folium-map&quot; id=&quot;map_73e7bcbf73a64825df994f21cdd28897&quot; ></div>
         
 </body>
 <script>
     
     
-            var map_0946dd704d952068d0899eca0330356b = L.map(
-                &quot;map_0946dd704d952068d0899eca0330356b&quot;,
+            var map_73e7bcbf73a64825df994f21cdd28897 = L.map(
+                &quot;map_73e7bcbf73a64825df994f21cdd28897&quot;,
                 {
                     center: [-19.2491, 146.799],
                     crs: L.CRS.EPSG3857,
@@ -293,42 +293,42 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
         
     
-            var tile_layer_f9bda63b6671fa25dc3d483fa86b631b = L.tileLayer(
+            var tile_layer_0d849c76b70b482adc08ab5d3f92c0d3 = L.tileLayer(
                 &quot;https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg&quot;,
                 {&quot;attribution&quot;: &quot;Map tiles by \u003ca target=\&quot;_blank\&quot; href=\&quot;http://stamen.com\&quot;\u003eStamen Design\u003c/a\u003e, under \u003ca target=\&quot;_blank\&quot; href=\&quot;http://creativecommons.org/licenses/by/3.0\&quot;\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca target=\&quot;_blank\&quot; href=\&quot;http://openstreetmap.org\&quot;\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\&quot;_blank\&quot; href=\&quot;http://creativecommons.org/licenses/by-sa/3.0\&quot;\u003eCC BY SA\u003c/a\u003e.&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 18, &quot;maxZoom&quot;: 18, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
-            ).addTo(map_0946dd704d952068d0899eca0330356b);
+            ).addTo(map_73e7bcbf73a64825df994f21cdd28897);
         
     
-            var marker_72eb4898f7cdb9c248773da7074ef4a0 = L.marker(
+            var marker_d1a145ce577c6e34882fc23eefa590f6 = L.marker(
                 [-19.2491, 146.799],
                 {}
-            ).addTo(map_0946dd704d952068d0899eca0330356b);
+            ).addTo(map_73e7bcbf73a64825df994f21cdd28897);
         
     
-        var popup_8aea152fab79844615501f0dce9cb8b6 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_e52d4df720e4c5d376febd952f8d7754 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
         
             
-                var html_cd42339ace3bf33c0bd0ae53b5d1a2b0 = $(`<div id=&quot;html_cd42339ace3bf33c0bd0ae53b5d1a2b0&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Castle Hill</div>`)[0];
-                popup_8aea152fab79844615501f0dce9cb8b6.setContent(html_cd42339ace3bf33c0bd0ae53b5d1a2b0);
+                var html_c68a4f181fa057035ccb50c52b37666f = $(`<div id=&quot;html_c68a4f181fa057035ccb50c52b37666f&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Castle Hill</div>`)[0];
+                popup_e52d4df720e4c5d376febd952f8d7754.setContent(html_c68a4f181fa057035ccb50c52b37666f);
             
         
 
-        marker_72eb4898f7cdb9c248773da7074ef4a0.bindPopup(popup_8aea152fab79844615501f0dce9cb8b6)
+        marker_d1a145ce577c6e34882fc23eefa590f6.bindPopup(popup_e52d4df720e4c5d376febd952f8d7754)
         ;
 
         
     
     
                 function newMarker(e){
-                    var new_mark = L.marker().setLatLng(e.latlng).addTo(map_0946dd704d952068d0899eca0330356b);
+                    var new_mark = L.marker().setLatLng(e.latlng).addTo(map_73e7bcbf73a64825df994f21cdd28897);
                     new_mark.dragging.enable();
-                    new_mark.on('dblclick', function(e){ map_0946dd704d952068d0899eca0330356b.removeLayer(e.target)})
+                    new_mark.on('dblclick', function(e){ map_73e7bcbf73a64825df994f21cdd28897.removeLayer(e.target)})
                     var lat = e.latlng.lat.toFixed(4),
                        lng = e.latlng.lng.toFixed(4);
                     new_mark.bindPopup(`Waypoint`);
                     };
-                map_0946dd704d952068d0899eca0330356b.on('click', newMarker);
+                map_73e7bcbf73a64825df994f21cdd28897.on('click', newMarker);
             
 </script>
 </html>" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe></div></div>
