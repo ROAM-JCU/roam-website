@@ -1,4 +1,6 @@
 nbdev
+nbformat
+nbclient
 jupyterlab
 pandas
 folium
