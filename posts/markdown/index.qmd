@@ -1,0 +1,82 @@
+---
+toc: true
+layout: post
+description: A minimal example of using markdown with Quarto.
+categories: [markdown]
+title: Markdown example
+author: "César Herrera"
+date: "2020-01-14"
+---
+
+# Example Markdown Post
+
+Quarto `.qmd` can be formatted using Markdonw. Below you can find some formatting examples
+
+## Basic formatting
+
+You can use *italics*, **bold**, `code font text`, and create [links](https://www.markdownguide.org/cheat-sheet/). Here's a footnote [^1]. Here's a horizontal rule:
+
+---
+
+## Lists
+
+Here's a list:
+
+- item 1
+- item 2
+
+And a numbered list:
+
+1. item 1
+1. item 2
+
+## Boxes and stuff
+
+> This is a quotation
+
+{% include alert.html text="You can include alert boxes" %}
+
+...and...
+
+{% include info.html text="You can include info boxes" %}
+
+## Images
+
+![](../../src/roam_logo.JPG "ROAM logo")
+
+## Code
+
+You can format text and code as usual 
+
+Formatting text as Python commands:
+
+```python
+# Prints '2'
+print(1+1)
+```
+
+Formatting text as shell commands:
+
+```bash
+echo "hello world"
+./some_script.sh --option "value"
+wget https://example.com/cat_photo1.png
+```
+
+Formatting text as YAML:
+
+```yaml
+key: value
+- another_key: "another value"
+```
+
+## Tables
+
+| Column 1 | Column 2 |
+|-|-|
+| A thing | Another thing |
+
+
+## Footnotes
+
+[^1]: This is the footnote.
