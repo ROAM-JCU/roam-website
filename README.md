@@ -4,7 +4,7 @@
 
 Research on Animal Movement by researchers at James Cook University. [Visit the living website](https://ROAM-JCU.github.io/roam-website/)
 
-<img src="src/roam_logo.JPG" height="250">
+<img src="src/roam_logo.JPG" height="214" width="360">
 
 Repository hosting ROAM JCU website.
 
