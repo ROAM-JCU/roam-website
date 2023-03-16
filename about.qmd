@@ -1,6 +1,6 @@
 ---
 title: "About"
-image: src/roam_logo.jpg
+image: src/roam_logo.JPG
 about:
   template: marquee
 format:

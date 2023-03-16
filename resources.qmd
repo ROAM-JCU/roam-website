@@ -17,7 +17,7 @@ Cool Python/R package for awesome visualizations.
 
 ### Python: Leaflet + Folium
 
-Example modify from [Python Visualization website](https://python-visualization.github.io/folium/quickstart.html#Choropleth-maps)
+Example modified from [Python Visualization website](https://python-visualization.github.io/folium/quickstart.html#Choropleth-maps)
 
 ```{python}
 import folium

@@ -1,4 +1,4 @@
-[![](https://github.com/ROAM-JCU/roam-website/workflows/GH-Pages%20Status/badge.svg)](https://github.com/ROAM-JCU/roam-website/actions/workflows/publish.yaml)
+[![](https://github.com/ROAM-JCU/roam-website/workflows/ROAM%20JCU%20Publish@20Quarto%20site/badge.svg)](https://github.com/ROAM-JCU/roam-website/actions/workflows/publish.yaml)
 
 # ROAM JCU
 
