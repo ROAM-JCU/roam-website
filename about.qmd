@@ -1,0 +1,124 @@
+---
+title: "About"
+image: src/roam_logo.jpg
+about:
+  template: marquee
+format:
+  html:
+    css: styles.css
+execute:
+  echo: false
+  eval: true
+  output: asis
+---
+
+<div>
+ROAM is the research of animal movement group at James Cook University. Our group is made up of people across diverse disciplines, academic qualifications, gender, cultural backgrounds, and expertise. We are interested in a wide variety of animal movement topics in a manifold of ecosystems and taxa, including crustaceans, fish, birds, mammals, and reptiles.
+
+ROAM was founded and is currently led by Kyana Pike and Emily Webster, with the invigorating collaboration of ROAM members.
+
+We meet every second Tuesday at noon using a mixed virtual and in-person format.
+</div>
+
+<h1>Who we are</h1>
+
+```{python}
+import yaml
+from pathlib import Path
+
+members = yaml.safe_load(Path("src/members/members.yml").read_text())
+
+for member in members.get("members"):
+
+  if "email" in member.keys():
+    email_html = """
+    <a style="text-decoration:none" href="mailto:""" + member.get("email") + """" rel="nofollow noopener noreferrer">
+          <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+    </a>
+    """
+  else:
+    email_html = ""
+
+  if "twitter" in member.keys():
+    twitter_html = """
+    <a style="text-decoration:none" href="https://twitter.com/""" + member.get("twitter") + """" rel="nofollow noopener noreferrer">
+          <i class="bi bi-twitter" aria-hidden="true"></i>
+    </a>
+    """
+  else:
+    twitter_html = ""
+
+  if "github" in member.keys():
+    github_html = """
+    <a style="text-decoration:none" href="https://github.com/""" + member.get("github") + """" rel="nofollow noopener noreferrer">
+          <i class="bi bi-github" aria-hidden="true"></i>
+    </a>
+    """
+  else:
+    github_html = ""
+
+  if "linkedin" in member.keys():
+    linkedin_html = """
+    <a style="text-decoration:none" href="https://linkedin.com/in/""" + member.get("linkedin") + """" rel="nofollow noopener noreferrer">
+          <i class="bi bi-linkedin" aria-hidden="true"></i>
+    </a>
+    """
+  else:
+    linkedin_html = ""
+
+  if "google-scholar" in member.keys():
+    gs_html = """
+    <a style="text-decoration:none" href="https://scholar.google.com/citations?user=""" + member.get("google-scholar") + """" rel="nofollow noopener noreferrer">
+          <i class="bi bi-google" aria-hidden="true"></i>
+    </a>
+    """
+  else:
+    gs_html = ""
+  
+  if "url" in member.keys():
+    web_url = """
+    <a style="text-decoration:none" href=""" + member.get("url") + """ rel="nofollow noopener noreferrer">
+          <i class="bi bi-globe" aria-hidden="true"></i>
+    </a>
+    """
+  else:
+    web_url = ""
+
+  html = """
+  <div style="display: flex;
+              flex-wrap: wrap;
+              padding: 20px">
+  <div style="width: 50%;
+                padding-right:15px;
+                padding-left:15px;
+                margin-right:auto;
+                margin-left:auto;
+                float:left">
+  <img style='max-width: 300px;
+              max-height: 300px;
+              width: 100%;
+              height: auto;
+              float:left;' src='src/members/images/""" + member.get("picture") +  """' alt='' width='300' height=300'>
+  </div>
+  <div style="width: 50%;
+                padding-right: 15px;
+                padding-left: 15px;
+                margin-right: auto;
+                margin-left: auto;
+                justify-content: center">
+  <h3 style="margin-top: 0">""" + member.get("name") + """</h3>
+  <ul class="social-icons" style="margin-right: auto;margin-left: auto">""" + email_html + twitter_html + github_html + linkedin_html + gs_html + web_url + """
+  </ul>                    
+  <p style="font-size:14px;
+            text-align: justify;
+            text-justify: inter-word;
+            margin-right: auto;
+            margin-left: auto">""" + member.get("description") + """</p>
+  </div>
+  <br>
+  </div>
+  """
+
+  print(html)
+
+```

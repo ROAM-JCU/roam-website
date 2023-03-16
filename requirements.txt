@@ -1,0 +1,4 @@
+nbdev
+jupyterlab
+pandas
+folium

@@ -1,0 +1,30 @@
+---
+title: "Resources"
+format:
+  html:
+    code-fold: true
+    css: styles.css
+jupyter: python3
+---
+
+## ROAM summaries
+
+All ROAM summaries can be found [here](https://github.com/ROAM-JCU/roam-summaries)
+
+## Code chunks
+
+Cool Python/R package for awesome visualizations.
+
+### Python: Leaflet + Folium
+
+Example modify from [Python Visualization website](https://python-visualization.github.io/folium/quickstart.html#Choropleth-maps)
+
+```{python}
+import folium
+
+m = folium.Map(location=[-19.2491, 146.799], tiles="Stamen Terrain", zoom_start=14)
+folium.Marker([-19.2491, 146.799], popup="Castle Hill").add_to(m)
+m.add_child(folium.ClickForMarker(popup="Waypoint"))
+
+m
+```

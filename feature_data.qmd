@@ -1,0 +1,10 @@
+---
+title: "Feature Data"
+format:
+  html:
+    code-fold: true
+jupyter: python3
+---
+
+This fortnight we featured Oilbirds tracking data from Holland et al 2009.
+

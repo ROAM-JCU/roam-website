@@ -1,0 +1,29 @@
+---
+title: "Research Of Animal Movement group"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: true
+format:
+  html:
+    css: styles.css
+---
+
+<div>
+  <img src="src/roam_logo.JPG" align="left"  alt="ROAM logo" width = "360" height = "214" >
+  <p style="font-size:18px;" align="justify">
+      
+        The Research Of Animal Movement group discusses techniques and analysis for data that tracks animals in time and space, 
+      and revel in the delights of movement ecology. We seek to increase capacity building in our community to support effective 
+      delivery of research and increase research outcomes using the most adequate tools for the job.
+  </p>
+</div>
+
+<br></br>
+
+<h1>Posts</h1>

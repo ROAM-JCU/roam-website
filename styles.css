@@ -1,0 +1,10 @@
+/* css styles */
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+a {
+    margin-left: 10px;
+}
